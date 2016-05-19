@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Title of the document</title>
+<title>ProEdify Elements</title>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Cabin:400,700|Cabin+Sketch:700|Source+Sans+Pro:700,400,300' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js">
 </script>
 <link href="/js/min/js-min.js">
@@ -10,12 +11,48 @@
 
 <body>
 	<!-- Search Field -->
-	<div style="padding: 2em; background-color: rgb(100,100,110)">		
-		<input placeholder="Search Our Free Video Library" type="search">
+	<div class="element-container">		
+		<input class="search-input" placeholder="Enter Your Name" type="text">
+		<div class="bottom"></div>
+	</div>
+	<div class="element-container">		
+		<textarea placeholder="Enter your message" rows="4" cols="50"></textarea>
+		<div class="bottom"></div>
+	</div>
+	<div class="element-container">		
+		<input class="search-input" placeholder="Search Our Free Video Library" type="search">
 		<span class="search-icon"></span>
 		<div class="bottom"></div>
 	</div>
-	<div style="padding: 2em; background-color: rgb(100,100,110)">
+	<div class="element-container">
+
+		<div style="text-align: center">
+			<input id="checker" type="checkbox">
+			<label for="checker">
+				Checkbox
+			</label>
+			&nbsp;
+			<input id="checker" type="checkbox" checked>
+			<label for="checker">
+				Checkbox
+			</label>
+			&nbsp;
+			<input id="checker-disabled" type="checkbox" name="peCheck" value="" disabled>
+			<label for="checker-disabled">
+				Checkbox
+			</label>
+		</div>
+
+	</div>
+	<div class="element-container">
+		<div style="text-align: center;">
+			<input id="radio1" type="radio" name="group" />
+			<label for="radio1">Radio Box 1</label>
+			<input id="radio2" type="radio" name="group" checked />
+			<label for="radio2">Radio Box 2</label>
+		</div>
+	</div>
+	<div class="element-container">
 		<button>Submit</button>
 		<button>Info</button>
 		<button>Start Now</button>

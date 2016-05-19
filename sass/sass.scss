@@ -2,7 +2,22 @@
 @import "forms";
 
 *,
-*::after,
-*::before {
+*:after,
+*:before {
 	box-sizing: border-box;
+}
+
+.element-container {
+	padding: 2em; 
+	background-color: rgb(100,100,110);
+	// color: white;
+}
+
+label,
+input,
+p,
+textarea {
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
 }
